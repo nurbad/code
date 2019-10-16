@@ -2,7 +2,7 @@ from wordpress_xmlrpc import Client
 from wordpress_xmlrpc.methods import posts
 from wordpress_xmlrpc import WordPressPost
 
-your_blog = Client('http://192.81.215.238/xmlrpc.php', 'bangnidd', 'ok')
+your_blog = Client('http://192.81.215.238/xmlrpc.php', 'user', 'pass')
 
 myposts=your_blog.call(posts.GetPosts())
 
